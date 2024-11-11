@@ -1,0 +1,43 @@
+@media (max-width:800px) {
+    #test{
+     background-color: green;
+    }
+
+
+    #mobilecontainer{
+        display:grid;
+        width:100vw;
+        height:100vh;
+        grid-template-columns: 1% 1fr 1%;
+        grid-template-rows: 1fr 0.6fr 6fr 6fr 1fr;
+    
+        grid-template-areas:
+        ". Mheader ."
+        ". Mnav ."
+        ". Mside1 ."
+        ". Mside2 ."
+        ". Mfooter .";
+    }
+
+
+    #mobileheader{
+        grid-area:Mheader;
+    }
+
+    #mobilenav{
+        grid-area:Mnav;
+    }
+
+    #mobileaside1{
+        grid-area:Mside1;
+    }
+
+    #mobileaside2{
+        grid-area:Mside2;
+    }
+
+    #mobilefooter{
+        grid-area:Mfooter;
+    }
+
+ }
