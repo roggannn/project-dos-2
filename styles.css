@@ -1,5 +1,11 @@
 @import "mobile.css";
 
+:root{
+    --primary-color:#FF6B6B;
+    --secondary-color:#FFE66D;
+    --accent-color:#4ECDC4;
+}
+
 .container{
     display:grid;
     width:100vw;
@@ -17,14 +23,18 @@
 
 header{
     grid-area:header;
-    background-color: #c8f3c8;
+    background-color: var(--secondary-color);
     border: 1px solid black;
+}
+
+header h1{
+    text-align: center;
 }
 
 nav{
     grid-area:nav;
     display:flex;
-    background-color: #FF6B6B;
+    background-color: var(--primary-color);
     border: 1px solid black;
     justify-content:space-evenly;
     align-items:center;
@@ -32,57 +42,69 @@ nav{
 
 .aside1{
     grid-area:side1;
-    background-color:#FFE66D;
+    background-color:var(--primary-color);
     border: 1px solid black;
 }
 
 .aside2{
     grid-area:side2;
-    background-color: #FFE66D;
+    background-color: var(--primary-color);
     border: 1px solid black;
 }
 
 .content1{
     grid-area:content1;
-    background-color: #FF6B6B;
+    background-color: var(--primary-color);
     border: 1px solid black;
 }
 
 .content2{
     grid-area:content2;
-    background-color:#4ECDC4;
+    background-color:var(--primary-color);
     border: 1px solid black;
 }
 
 .content3{
     grid-area:content3;
-    background-color: orange;
+    background-color: var(--primary-color);
     border: 1px solid black;
 }
 
 .content4{
     grid-area:content4;
-    background-color: #FF6B6B;
+    background-color: var(--primary-color);
     border: 1px solid black;
 }
 
 footer{
     grid-area:footer;
-    background-color: #4ECDC4;
+    background-color: var(--secondary-color);
     border: 1px solid black;
 }
 
-nav ul{
-    list-style-type: none;
-    margin:0;
-    overflow:hidden;
-    
+nav .Hem{
+    height:100%;
+    width:100%;
+    border:1px solid black;
+    text-align:center;
+    text-decoration: none;
+    color:black;
 }
 
-nav li{
-    float:left;
-    padding:10px;
-    margin-left:10px;
-    margin-right:10px;
-    border-radius:10px;
+nav .Spel{
+    height:100%;
+    width:100%;
+    border:1px solid black;
+    text-align:center;
+    text-decoration: none;
+    color:black;
+}
+
+nav .Kontakt{
+    height:100%;
+    width:100%;
+    border:1px solid black;
+    text-align:center;
+    text-decoration: none;
+    color:black;
 }
