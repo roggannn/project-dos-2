@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containerK">
+        <header id="mobileheader">
+            <h1>Noah's GameShop</h1>
+        </header>
+        <nav id="mobilenav">
+            <a class="Hem" href="home.html">
+                <p class="HemText">Hem</p>
+            </a>
+            <a class="Spel" href="home.html">
+                <p class="SpelText">Spel</p>
+            </a>
+            <a class="Kontakt" href="kontakt.html">
+                <p class="KontaktText">Kontakta oss</p>
+            </a>
+        </nav>
+        <main class="mainK">
+            <form class="kontaktForm" action="">
+                <label class="Förnamn">
+                    Namn:
+                    <input type="text" name="förnamn">
+                </label>
+                <br>
+                <label class="Anledning">
+                    Varför du skriver:
+                    <select name="anledning" id="anledning">
+                        <option value="Feedback">Feedback</option>
+                        <option value="Support">Support</option>
+                        <option value="Företag">Företags fråga</option>
+                    </select>
+                </label>
+                <label class="Text">
+                    <textarea name="meddelande" cols="30" rows="10" placeholder="Skriv ditt meddelande här..."></textarea>
+                </label>
+                <label class="SubmitKnapp">
+                    <input type="submit" name="Submit" value="Skicka">
+                </label>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

@@ -9,13 +9,17 @@
         width:100vw;
         min-height: 100vh auto;
         grid-template-columns: 1% 1fr 1%;
-        grid-template-rows: 1fr 0.6fr 6fr 6fr 1fr;
+        grid-template-rows: 1fr 1 6fr 6fr 6fr 6fr 6fr 6fr 1fr;
     
         grid-template-areas:
         ". Mheader ."
         ". Mnav ."
         ". Mside1 ."
+        ". Mcontent1 ."
+        ". Mcontent2 ."
         ". Mside2 ."
+        ". Mcontent3 ."
+        ". Mcontent4 ."
         ". Mfooter .";
     }
 
@@ -32,8 +36,24 @@
         grid-area:Mside1;
     }
 
+    #mobilecontent1{
+        grid-area:Mcontent1;
+    }
+
+    #mobilecontent2{
+        grid-area:Mcontent2;
+    }
+
     #mobileaside2{
         grid-area:Mside2;
+    }
+
+    #mobilecontent3{
+        grid-area:Mcontent3;
+    }
+
+    #mobilecontent4{
+        grid-area:Mcontent4;
     }
 
     #mobilefooter{
