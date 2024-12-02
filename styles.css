@@ -73,13 +73,32 @@ nav{
     border: 1px solid black;
     flex-wrap:wrap;
     flex-direction: row;
-    
+    text-align: center;
+    justify-content: center;
 }
 
 .content1 img{
     height:100%;
     width:100%;
     cursor:pointer;
+    z-index: 2;
+}
+
+.content1 img:hover + p{
+    visibility: visible;
+    opacity:1;
+}
+
+.content1 p{
+    position:absolute;
+    color:rgb(0, 0, 0);
+    height:min-content;
+    max-width:100%;
+    visibility: hidden;
+    opacity:0;
+    z-index: 3;
+    transition: 0.5s ease;
+    font-size:20px;
 }
 
 .content2{
@@ -103,7 +122,12 @@ nav{
     width:100%;
     height:100%;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
+}
+
+.content3 img:hover + p{
+    visibility: visible;
+    opacity:1;
 }
 
 .content3 p{
@@ -112,12 +136,17 @@ nav{
     height:min-content;
     width:fit-content;
     visibility: hidden;
-    z-index: 2;
+    opacity:0;
+    z-index: 3;
+    transition: 0.5s ease;
+    font-size:20px;
 }
 
-.content3 img:hover + p{
+.content3 p:hover{
     visibility: visible;
+    opacity:1;
 }
+
 
 .content4{
     grid-area:content4;
@@ -179,13 +208,11 @@ nav .Kontakt:hover{
 .mainK{
     grid-area:main;
     background-color: var(--primary-color);
-    height:60vh;
     display:grid;
+    height:60vh;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr;
 }
-
-
 
 .kontaktForm{
     grid-area: 2/1;
@@ -203,6 +230,8 @@ nav .Kontakt:hover{
 .kontaktForm .Text textarea{
     border-radius:5px;
     margin:10px;
+    max-width:70vw;
+    max-height:40vh;
 }
 
 .kontaktForm .SubmitKnapp input{
