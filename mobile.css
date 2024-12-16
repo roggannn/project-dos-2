@@ -1,15 +1,13 @@
 @media (max-width:800px) {
-    #test{
-     background-color: green;
-    }
-
 
     #mobilecontainer{
         display:grid;
+        margin:0;
+        gap:0;
         width:100vw;
-        min-height: 100vh auto;
+        min-height: 100vh;
         grid-template-columns: 1% 1fr 1%;
-        grid-template-rows: 1fr 1 6fr 6fr 6fr 6fr 6fr 6fr 1fr;
+        grid-template-rows: 1fr 1fr 6fr 6fr 6fr 6fr 6fr 6fr 1fr;
     
         grid-template-areas:
         ". Mheader ."
@@ -30,6 +28,7 @@
 
     #mobilenav{
         grid-area:Mnav;
+        justify-content: center;
     }
 
     #mobileaside1{
@@ -38,6 +37,7 @@
 
     #mobilecontent1{
         grid-area:Mcontent1;
+        
     }
 
     #mobilecontent2{
